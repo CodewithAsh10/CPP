@@ -11,9 +11,13 @@ int main() {
             break;
         }
     }
-    if(flag==true){
+    if (n==1) {
+        cout<<n<<" is neither Prime nor Composite";
+    }
+    else if(flag==true){
         cout<<n<<" is Prime NO.";
-    }    else {
+    }    
+    else {
         cout<<n<<" is Composite No.";
     }
     
