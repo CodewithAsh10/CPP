@@ -1,24 +1,30 @@
 #include <iostream>
 using namespace std;
+
 int main() {
     int n;
-    cout<<"Enter a no: ";
-    cin>>n;
-    bool flag = true;
-    for(int i=2;i<=n/2;i++) {
-        if(n%i==0) {
-            flag = false;
+    cout << "Enter a number: ";
+    cin >> n;
+
+    if (n <= 1) {
+        cout << n << " is neither Prime nor Composite.\n";
+        return 0;
+    }
+
+    bool isPrime = true;
+
+    for (int i = 2; i * i <= n; i++) {   // Loop  up to √n
+        if (n % i == 0) {
+            isPrime = false;
             break;
         }
     }
-    if (n==1) {
-        cout<<n<<" is neither Prime nor Composite";
+
+    if (isPrime) {
+        cout << n << " is a Prime number.\n";
+    } else {
+        cout << n << " is a Composite number.\n";
     }
-    else if(flag==true){
-        cout<<n<<" is Prime NO.";
-    }    
-    else {
-        cout<<n<<" is Composite No.";
-    }
-    
+
+    return 0;
 }
