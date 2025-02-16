@@ -29,7 +29,7 @@ int main() {
         j++;
     }
 
-    // (N-R)!
+// (N-R)!
     int c = 1;
     int s = n-r;
     int k = 1; 
