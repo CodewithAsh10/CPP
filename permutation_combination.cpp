@@ -40,12 +40,12 @@ int main() {
 
     
 // Permutation n!/(n-r)!
-    float result_p = 0;
+    int result_p = 0;
     result_p = a/c;
     cout<<"Permutation of "<<n<<"P"<<r<<" : "<<result_p<<endl;
 
 // Combination n!/((n-r)!*r!)
-    float result_c = 0;
+    int result_c = 0;
     result_c = a/(c*b);
     cout<<"Combination of "<<n<<"C"<<r<<" : "<<result_c;
 }
